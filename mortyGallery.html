@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Pictures!</title>
+        <style>
+            #control {
+                background-color: rgba(200, 200, 200, 0.5);
+                width: 50vw;
+                height: 40vh;
+                position: fixed;
+                left: 0px;
+                right: 0px;
+                top: 0px;
+                bottom: 0px;
+                margin: auto;
+                border-radius: 15px;
+            }
+
+            #avatar {
+                width: 110px;
+                height: 110px;
+                position: absolute;
+                left: -55px;
+                top: -55px;
+                border-radius: 50%;
+                border: rgba(200, 200, 200, 0.5) solid 3px;
+            }
+
+            #smallImgs {
+                position: absolute;
+                top: 40px;
+                left: 5px;
+            }
+
+            #backgroundImages {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100vw;
+            }
+
+            .bigImgs {
+                width: 100vw;
+                height: auto;
+            }
+
+            .thumbs {
+                width: 25vw;
+                height: auto;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="backgroundImages">
+            <img class="bigImgs" src="bigImg1.png"/>
+            <img class="bigImgs" src="bigImg2.png"/>
+            <img class="bigImgs" src="bigImg3.png"/>
+            <img class="bigImgs" src="bigImg4.png"/>
+        </div>
+        <div id="control">
+            <img id="avatar" src="profilePictureAnimated.gif" />
+            <div id="smallImgs">
+                <img class="thumbs" src="bigImg1.png" />
+                <img class="thumbs" src="bigImg2.png" />
+                <img class="thumbs" src="bigImg3.png" />
+                <img class="thumbs" src="bigImg4.png" />
+            </div>
+        </div>
+    </body>
+</html>
