@@ -8,14 +8,31 @@
                 width: 100px;
                 height: 100px;
                 display: block;
+                margin: 10px 0px 20px 0px;
+            }
+
+            #relBox {
+                position: relative;
+                left: 20px;
+            }
+
+            #absBox, #absBox2 {
+                position: absolute;
+                background-color: red;
+                bottom: 10px;
+                right: 10px;
+                width: 50px;
+                height: 50px;
             }
         </style>
     </head>
     <body>
         <div class="display">
             <div class="boxes"></div>
-            <div class="boxes"></div>
-            <div class="boxes"></div>
+            <div class="boxes" id="relBox">
+                <div id="absBox2"></div>
+            </div>
+            <div class="boxes" id="absBox"></div>
             <div class="boxes"></div>
             <div class="boxes"></div>
         </div>
